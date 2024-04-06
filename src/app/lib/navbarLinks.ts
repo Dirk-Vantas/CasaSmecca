@@ -11,10 +11,6 @@ export const MainNav: linkItem[] = [
   },
   { href: "/", text: "Home" },
   {
-    href: "/cart",
-    text: "Cart",
-  },
-  {
     href: "/gift",
     text: "Gift",
   },

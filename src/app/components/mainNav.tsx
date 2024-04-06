@@ -26,7 +26,7 @@ export default function MainNavbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Image src={"/next.svg"} alt="company logo" width={100} height={50} />
+          <Image src={"/image.png"} alt="company logo" width={151} height={64} />
         </NavbarBrand>
       </NavbarContent>
 
@@ -43,10 +43,10 @@ export default function MainNavbar() {
         ) : (
           <div className="flex flex-row gap-4">
             <NavbarItem>
-              <Link className="hidden lg:flex text-lime-100" href="/auth/signin">Login</Link>
+              <Link className="hidden lg:flex text-lime-100" href="/cart">Cart</Link>
             </NavbarItem>
             <NavbarItem>
-              <Link className="hidden lg:flex text-lime-100" href="/cart">Cart</Link>
+              <Link className="hidden lg:flex text-lime-100" href="/auth/signin">Login</Link>
             </NavbarItem>
           </div>
 
