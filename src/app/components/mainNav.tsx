@@ -33,7 +33,7 @@ export default function MainNavbar() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {MainNav.map((item, index) => (
           <NavbarItem key={index}>
-            <Link href={item.href}>{item.text}</Link>
+            <Link className="text-lime-100" href={item.href}>{item.text}</Link>
           </NavbarItem>
         ))}
       </NavbarContent>
@@ -41,9 +41,15 @@ export default function MainNavbar() {
         {session && session.user ? (
           <p>Hello {session.user.name}</p>
         ) : (
-          <NavbarItem className="hidden lg:flex">
-            <Link href="/auth/signin">Login</Link>
-          </NavbarItem>
+          <div className="flex flex-row gap-4">
+            <NavbarItem>
+              <Link className="hidden lg:flex text-lime-100" href="/auth/signin">Login</Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link className="hidden lg:flex text-lime-100" href="/cart">Cart</Link>
+            </NavbarItem>
+          </div>
+
         )}
       </NavbarContent>
       <NavbarMenu>
