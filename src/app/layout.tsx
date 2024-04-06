@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./components/provider";
 import MainNavbar from "./components/mainNav";
+import ParallaxHeader from "./components/parallaxHeader";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+
         <Providers>
-          <MainNavbar />
+          <div>
+            <ParallaxHeader />
+            <MainNavbar />
+          </div>
+
           <div className="flex-grow">{children}</div>
+          <Footer />
+
         </Providers>
       </body>
     </html>
