@@ -9,7 +9,10 @@ export const MainNav: linkItem[] = [
     href: "/shop",
     text: "Shop",
   },
-  { href: "/", text: "Home" },
+  { 
+    href: "/",
+    text: "Home"
+  },
   {
     href: "/gift",
     text: "Gift",
@@ -21,10 +24,6 @@ export const MainNav: linkItem[] = [
 ];
 
 export const MainFooter: linkItem[] = [
-  {
-    href: "/news",
-    text: "News",
-  },
   {
     href: "/kontakt",
     text: "Kontakt",
