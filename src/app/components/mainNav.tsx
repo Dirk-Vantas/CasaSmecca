@@ -19,7 +19,7 @@ export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { data: session } = useSession();
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar className="bg-lime-950" onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -27,7 +27,6 @@ export default function MainNavbar() {
         />
         <NavbarBrand>
           <Image src={"/next.svg"} alt="company logo" width={100} height={50} />
-          <p className="font-bold text-inherit">Shop</p>
         </NavbarBrand>
       </NavbarContent>
 
