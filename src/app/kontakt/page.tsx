@@ -7,7 +7,7 @@ export default function Kontakt() {
             <div className='rounded-lg max-w-screen-lg text-black'>
                 <div className="flex flex-row gap-16">
                     <div className="rounded-lg border-4 border-lime-950">
-                        <Image src={"/FOTOSALVO.jpg"} className="rounded-lg min-w-96" alt="Flowbite Logo" width={1600} height={1920} />
+                        <Image src={"/FOTOSALVO.jpg"} className="rounded-lg min-w-96" alt="SALVO" width={1600} height={1920} />
                     </div>
                     <div className="min-w-96 rounded-lg p-4 bg-lime-100 border-4 border-lime-950">
                         <h1 className="text-lg">Kontakt</h1>
@@ -23,8 +23,11 @@ export default function Kontakt() {
 
                             <br />
                             E-mail:&nbsp; <a href="mailto:salvo@casasmecca.ch">salvo@casasmecca.ch</a><br />
-                            <br />
                             E-mail:&nbsp; <a href="mailto:s.smecca@sunrise.ch">s.smecca@bluewin.ch</a><br />
+                            <br />
+                            <div className="flex flex-col items-center">
+                                <Image src={"/Turm.jpg"} className="rounded-lg" alt="stedtli turm" width={191} height={300} />                                
+                            </div>
                         </h4>
                     </div>
                 </div>

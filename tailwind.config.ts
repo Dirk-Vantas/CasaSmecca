@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const flowbite = require("flowbite-react/tailwind");
 const { nextui } = require("@nextui-org/react");
 
 const config: Config = {
@@ -7,6 +8,8 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
+    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -39,7 +42,11 @@ const config: Config = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui(),
+    require('flowbite/plugin'),
+    flowbite.plugin(),
+  ],
 };
 
 export default config;
