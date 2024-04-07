@@ -24,14 +24,13 @@ export default function createProduct()
     return (
         <div>
           <h2>Product Information Form</h2>
-          <form onSubmit={handleSubmit}>
+          <form action={addProduct}>
             <label htmlFor="name">Name:</label><br />
             <input
               type="text"
               id="name"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
+              
               required
             /><br />
     
@@ -39,9 +38,9 @@ export default function createProduct()
             <textarea
               id="description"
               name="description"
-              rows="4"
-              value={formData.description}
-              onChange={handleChange}
+              
+              
+              
               required
             /><br />
     
@@ -50,8 +49,8 @@ export default function createProduct()
               type="number"
               id="stock"
               name="stock"
-              value={formData.stock}
-              onChange={handleChange}
+              
+              
               required
             /><br />
     
@@ -60,8 +59,8 @@ export default function createProduct()
               type="text"
               id="stockPrice"
               name="stockPrice"
-              value={formData.stockPrice}
-              onChange={handleChange}
+              
+              
               required
             /><br />
     
@@ -70,18 +69,18 @@ export default function createProduct()
               type="text"
               id="categoryId"
               name="categoryId"
-              value={formData.categoryId}
-              onChange={handleChange}
+              
+              
               required
             /><br />
     
-            <label htmlFor="imageLink">Image Link:</label><br />
+            <label htmlFor="image">Image Link:</label><br />
             <input
-              type="url"
-              id="imageLink"
-              name="imageLink"
-              value={formData.imageLink}
-              onChange={handleChange}
+              type="text"
+              id="image"
+              name="image"
+              
+              
               required
             /><br /><br />
     
