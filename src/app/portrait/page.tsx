@@ -17,19 +17,19 @@ export default function Portrait() {
                 <br />
                 <div className="flex flex-row gap-4">
                     <div className="flex flex-col gap-2">
-                        <a href="/geschichte_klein.jpg" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <a href="/geschichte_klein.jpg" target="_blank" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <Image src={"/geschichte_klein.jpg"} alt="geschichte" width={200} height={270} />
                         </a>
                         <p>Geschichte</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <a href="/riconoscimento.jpg" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <a href="/riconoscimento.jpg" target="_blank" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <Image src={"/riconoscimento.jpg"} alt="riconoscimento" width={200} height={270} />
                         </a>
                         <p>Urkunde</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <a href="/anerkennungklein.jpg" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <a href="/anerkennungklein.jpg" target="_blank" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <Image src={"/anerkennungklein.jpg"} alt="annerkenung" width={200} height={270} />
                         </a>
                         <p>Anerkennung Ministeriums Arbeit</p>

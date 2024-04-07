@@ -5,21 +5,13 @@ interface linkItem {
 }
 
 export const MainNav: linkItem[] = [
-  {
-    href: "/shop",
-    text: "Shop",
-  },
   { 
     href: "/",
     text: "Home"
   },
   {
-    href: "/gift",
-    text: "Gift",
-  },
-  {
-    href: "/catering",
-    text: "Catering",
+    href: "/shop",
+    text: "Shop",
   },
 ];
 
