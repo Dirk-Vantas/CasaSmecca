@@ -15,6 +15,7 @@ import Image from "next/image";
 import { MainNav } from "../lib/navbarLinks";
 import { useSession } from "next-auth/react";
 
+
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { data: session } = useSession();
@@ -39,7 +40,14 @@ export default function MainNavbar() {
       </NavbarContent>
       <NavbarContent justify="end">
         {session && session.user ? (
-          <p>Hello {session.user.name}</p>
+          <div>
+            <NavbarItem>
+              <Link className="hidden lg:flex text-lime-100" href="/cart">Cart</Link>
+            </NavbarItem>
+            <p>Hello {session.user.name}</p>
+          </div>
+
+
         ) : (
           <div className="flex flex-row gap-4">
             <NavbarItem>
