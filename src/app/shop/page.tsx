@@ -5,5 +5,6 @@ export default function Shop() {
         <main className="flex min-h-screen flex-col items-center bg-lime-900 justify-between p-24">
             <productSidenav />
         </main>
+
     );
 }
