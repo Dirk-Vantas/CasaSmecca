@@ -1,28 +1,28 @@
 "use client";
 
 import { Sidebar } from "flowbite-react";
-import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from "react-icons/hi";
 
 
-export default function productSidenav() {
+export default function ProductSidenav() {
     return (
-        <Sidebar aria-label="Default sidebar example">
+        <Sidebar className="bg-lime-100 rounded" aria-label="Default sidebar example">
             <Sidebar.Items>
                 <Sidebar.ItemGroup>
-                    <Sidebar.Item href="#" icon={HiChartPie}>
-                        Dashboard
+                    <Sidebar.Item href="/shop/food">
+                        Esswaren
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiViewBoards} label="Pro" labelColor="dark">
-                        Kanban
+                    <Sidebar.Item href="/shop/gift">
+                        Geschenk
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiInbox} label="3">
-                        Inbox
+                    <Sidebar.Item href="/shop/catering">
+                        Catering
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiUser}>
-                        Users
+                    <Sidebar.Item href="/shop/alcohol">
+                        Alkohol
                     </Sidebar.Item>
                 </Sidebar.ItemGroup>
             </Sidebar.Items>
         </Sidebar>
+
     );
 }

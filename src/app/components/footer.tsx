@@ -33,11 +33,10 @@ export default function Footer() {
                         ))}
                     </ul>
                 </div>
-                <hr className="my-6 border-gray-200 text-lime-950 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                
+                <hr className="my-6 border-lime-950 text-lime-950 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <span className="block text-sm text-lime-950 sm:text-center dark:text-gray-400">© 2024 by Casa Smecca | aller Rechte vorbehalten | Tel. 078 637 84 10 | E-Mail</span>
             </div>
         </footer>
-
-
     );
 }
