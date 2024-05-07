@@ -7,18 +7,18 @@ interface imageItem {
 export const imageItemShop: imageItem[] = [
     {
         href: "/shop/alcohol",
-        image: "/wine.jpg"
+        image: "/shop/wine.jpg"
     },
     {
         href: "/shop/catering",
-        image: "/catering.jpeg",
+        image: "/shop/catering.jpeg",
     },
     {
         href: "/shop/food",
-        image: "/food.jpeg",
+        image: "/shop/food.jpeg",
     },
     {
         href: "/shop/gift",
-        image: "/gift.jpeg",
+        image: "/shop/gift.jpeg",
     },
 ];

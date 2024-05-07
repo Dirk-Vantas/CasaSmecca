@@ -6,8 +6,8 @@ import { Sidebar } from "flowbite-react";
 export default function ProductSidenav() {
     return (
         <Sidebar className="bg-lime-100 rounded" aria-label="Default sidebar example">
-            <Sidebar.Items>
-                <Sidebar.ItemGroup>
+            <Sidebar.Items className="bg-lime-100">
+                <Sidebar.ItemGroup className="bg-lime-100">
                     <Sidebar.Item href="/shop/food">
                         Esswaren
                     </Sidebar.Item>

@@ -27,7 +27,7 @@ export default function MainNavbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Image src={"/image.png"} alt="company logo" width={151} height={64} />
+          <Image src={"/header/image.png"} alt="company logo" width={151} height={64} />
         </NavbarBrand>
       </NavbarContent>
 

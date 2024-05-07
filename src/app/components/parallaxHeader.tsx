@@ -24,7 +24,7 @@ export default function ParallaxHeader() {
             {/* style={{ transform: `translateY(${scrollPosition * 0.5}px)` }} */}
             <div className="parallax-header" >
                 <div className="header-content">
-                    <Image src={"/header2.png"} alt="company logo" className="w-full h-full" width={960} height={200} />
+                    <Image src={"/header/header2.png"} alt="company logo" className="w-full h-full ease-out duration-300" width={960} height={200} />
                 </div>
             </div>
         </div>
