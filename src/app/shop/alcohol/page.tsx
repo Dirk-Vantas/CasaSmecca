@@ -4,14 +4,10 @@ import Card from "../../components/card";
 import { authorizeUser } from "@/app/lib/authorizeUser";
 
 export default function Alcohol() {
-    const hansleClick = () =>{
-        authorizeUser();
-    }
     return (
-        <div className='border-4 border-lime-950 size-full rounded-lg bg-lime-100 max-w-screen-md text-black p-8'>
+        <div className='size-full rounded-lg bg-lime-700 max-w-screen-md text-black p-8 shadow-lg'>
             <div className="grid grid-cols-2 gap-4">
-                <Button onPress={hansleClick}>Button</Button>
-                
+                <Card href="" title="Limoncello" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." price={15} image="/alcohol/IMG_8441.jpg"/>
                 {/* {imageItemShop.map((item, index) => (
                 <div key={index} className="">
                     <a href={item.href} className="flex items-center">

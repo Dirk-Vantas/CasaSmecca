@@ -5,17 +5,18 @@ import { useSession } from "next-auth/react";
 export default function Card(props: productItem) {
     const { data: session } = useSession();
     return (
-        <div className="bg-lime-700 max-w-sm rounded overflow-hidden shadow-lg">
-            <Image src={props.image} alt="company logo" className="" width={200} height={200} />
+        <div className="bg-lime-100 max-w-sm rounded overflow-hidden shadow-lg">
+            <Image src={props.image} alt="company logo" className="" width={400} height={200} />
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{props.title}</div>
-                <p className="text-gray-700 text-base">
+                {/* <p className="text-black text-base">
                     {props.description}
-                </p>
+                </p> */}
+                
             </div>
             <div className="px-6 pt-4 pb-2">
-                <p className="text-gray-700 text-base">
-                    {props.price}
+                <p className="text-black text-base">
+                    {props.price} CHF
                 </p>
                 {session && session.user ? (
                     <>
@@ -29,8 +30,9 @@ export default function Card(props: productItem) {
                     </>
                 ) : (
                     <>
-                        <a href="#" className="">Produktdetails</a>
-                        <button type="button" className="">In den Warenkorb</button>
+                        
+                        <button type="button" className="bg-lime-950 p-2 rounded-lg" >In den Warenkorb</button>
+                        <a href="#" className="text-lime-950 hover:underline">Produktdetails</a>
                     </>
                 )}
             </div>
