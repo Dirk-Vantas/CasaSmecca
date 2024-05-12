@@ -13,7 +13,7 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import { MainNav } from "../lib/navbarLinks";
-import { useSession } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 
 
 export default function MainNavbar() {
@@ -40,24 +40,30 @@ export default function MainNavbar() {
       </NavbarContent>
       <NavbarContent justify="end">
         {session && session.user ? (
-          <div>
+          // <div className="flex flex-row gap-2">
+          <>
             <NavbarItem>
               <Link className="hidden lg:flex text-lime-100" href="/cart">Cart</Link>
             </NavbarItem>
-            <p>Hello {session.user.name}</p>
-          </div>
-
-
+            <NavbarItem>
+              <p className="text-lime-100">Hello {session.user.name}!</p>
+            </NavbarItem>
+            <NavbarItem>
+              <button className="bg-lime-700 hover:bg-lime-100 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onClick={() => signOut()} type="button" >
+                Sign Out
+              </button>
+            </NavbarItem>
+            </>
+          // </div>
         ) : (
-          <div className="flex flex-row gap-4">
-            <NavbarItem>
-              <Link className="hidden lg:flex text-lime-100" href="/cart">Cart</Link>
-            </NavbarItem>
+          // <div className="flex flex-row gap-4">
+          <>
             <NavbarItem>
               <Link className="hidden lg:flex text-lime-100" href="/auth/signin">Login</Link>
             </NavbarItem>
-          </div>
-
+          </>
+          // </div>
+          
         )}
       </NavbarContent>
       <NavbarMenu>

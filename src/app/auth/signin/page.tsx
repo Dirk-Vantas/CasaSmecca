@@ -14,6 +14,13 @@ export default function Signin() {
                 </Button>
                 <br />
                 <br />
+                <Button className="bg-lime-950 p-2 w-full" onPress={() => signIn("facebook")}>
+                    <Image src="https://authjs.dev/img/providers/facebook.svg" className="size-full" alt="Facebook" width={24} height={24} />
+                    <p className="text-lime-100 p-2">Sign in with Facebook</p>
+
+                </Button>
+                <br />
+                <br />
                 <Button className="bg-lime-950 p-2 w-full" onPress={() => signIn("google")}>
                     <Image src="https://authjs.dev/img/providers/google.svg" className="size-full" alt="Google" width={24} height={24} />
                     <p className="text-lime-100 p-2">Sign in with Google</p>
