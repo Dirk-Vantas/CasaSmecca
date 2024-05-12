@@ -1,4 +1,4 @@
-interface productItem {
+export interface productItem {
     href: string;
     target?: string;
     title: string;
@@ -7,54 +7,47 @@ interface productItem {
     image: string;
 }
 
-export const itemShop: productItem[] = [
+export const alcoholItemShop: productItem[] = [
     {
         href: "",
-        price: 0,
-        title: "",
-        description: "",
+        price: 15,
+        title: "Nero d`avola",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         image: "",
     },
     {
         href: "",
-        price: 0,
-        title: "",
-        description: "",
+        price: 23,
+        title: "Cabernet Sauvignon",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         image: "",
     },
     {
         href: "",
-        price: 0,
-        title: "",
-        description: "",
+        price: 14.50,
+        title: "Catarratto",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         image: "",
     },
     {
         href: "",
-        price: 0,
-        title: "",
-        description: "",
+        price: 21,
+        title: "Chardonnay",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         image: "",
     },
     {
         href: "",
-        price: 0,
-        title: "",
-        description: "",
+        price: 20,
+        title: "Grillo",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         image: "",
     },
     {
         href: "",
-        price: 0,
-        title: "",
-        description: "",
-        image: "",
-    },
-    {
-        href: "",
-        price: 0,
-        title: "",
-        description: "",
+        price: 15.50,
+        title: "Merlot",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         image: "",
     },
 ];

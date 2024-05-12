@@ -10,8 +10,8 @@ export default function Alcohol() {
     return (
         <div className='border-4 border-lime-950 size-full rounded-lg bg-lime-100 max-w-screen-md text-black p-8'>
             <div className="grid grid-cols-2 gap-4">
-<Button onPress={hansleClick}>Button</Button>
-                <Card />
+                <Button onPress={hansleClick}>Button</Button>
+                
                 {/* {imageItemShop.map((item, index) => (
                 <div key={index} className="">
                     <a href={item.href} className="flex items-center">
