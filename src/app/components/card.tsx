@@ -12,10 +12,10 @@ export default function Card(props: productItem) {
                 {/* <p className="text-black text-base">
                     {props.description}
                 </p> */}
-                <a href="#" className="text-lime-950 hover:underline">Produktdetails</a>
+                <a href={props.href} className="text-lime-950 hover:underline">Produktdetails</a>
             </div>
             <div className="px-6 pb-2">
-
+            <Image src={"/home/geschenkartikel.png"} alt="geschenk" width={116} height={139} />
                 <p className="text-black text-base">
                     {props.price} CHF
                 </p>
