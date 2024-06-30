@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 export default function Geschichte() {
     return (
         <main className="flex min-h-screen flex-col items-center bg-lime-900 justify-between p-24">
-            <div className='border-4 border-lime-950 rounded-lg bg-[url("/Unbenannt-2.jpg")] max-w-screen-md text-black p-8'>
+            <div className='border-4 border-lime-950 rounded-lg bg-[url("/geschichte/Unbenannt-2.jpg")] max-w-screen-md text-black p-8'>
                 <h1 className="text-lg">Geschichte</h1>
                 <br />
                 <br />

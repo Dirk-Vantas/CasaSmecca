@@ -3,6 +3,9 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import * as bcrypt from "bcrypt";
 import { User } from "@prisma/client";
 import prisma from "@/app/lib/prisma";
+import GithubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
+import FacebookProvider from "next-auth/providers/facebook";
 
 export const authOptions: AuthOptions = {
   pages: {
@@ -12,13 +15,25 @@ export const authOptions: AuthOptions = {
     strategy: "jwt",
   },
   providers: [
+    GithubProvider({
+      clientId: process.env.GITHUB_ID ?? "",
+      clientSecret: process.env.GITHUB_SECRET ?? "",
+    }),
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID ?? "",
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "",
+    }),
+    FacebookProvider({
+      clientId: process.env.FACEBOOK_CLIENT_ID ?? "",
+      clientSecret: process.env.FACEBOOK_CLIENT_SECRET ?? "",
+    }),
     CredentialsProvider({
       name: "Credentials",
       credentials: {
-        username: {
-          label: "Username",
-          type: "text",
-          placeholder: "Your Username",
+        email: {
+          label: "E-Mail",
+          type: "email",
+          placeholder: "example@example.com",
         },
         password: {
           label: "Password",
@@ -28,7 +43,7 @@ export const authOptions: AuthOptions = {
       async authorize(credentials) {
         const user = await prisma.user.findUnique({
           where: {
-            email: credentials?.username,
+            email: credentials?.email,
           },
         });
 

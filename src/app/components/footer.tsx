@@ -21,7 +21,7 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a href="/home" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <div className='bg-lime-100 rounded-full p-2'>
-                            <Image src={"/image2.png"} className="h-16" alt="Flowbite Logo" width={151} height={63} />
+                            <Image src={"/footer/image2.png"} className="h-16" alt="Flowbite Logo" width={151} height={63} />
                         </div>
                         {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
                     </a>
@@ -33,11 +33,10 @@ export default function Footer() {
                         ))}
                     </ul>
                 </div>
-                <hr className="my-6 border-gray-200 text-lime-950 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                
+                <hr className="my-6 border-lime-950 text-lime-950 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <span className="block text-sm text-lime-950 sm:text-center dark:text-gray-400">© 2024 by Casa Smecca | aller Rechte vorbehalten | Tel. 078 637 84 10 | E-Mail</span>
             </div>
         </footer>
-
-
     );
 }
